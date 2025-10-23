@@ -17,3 +17,9 @@ spring:
               uri: lb://BOOKING-SERVICE
               predicates:
                 - Path=/api/booking/**
+
+            - id: user-service
+              uri: lb://USER-SERVICE
+              predicates:
+                - Path=/api/auth/**
+
