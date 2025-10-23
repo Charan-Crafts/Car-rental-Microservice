@@ -1,22 +1,22 @@
 package com.growandshine.user_service.DTO;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.context.annotation.Bean;
 
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class RegisterDTO {
 
     private String userName;
 
+    private String email;
+
     private String password;
 
-    private String email;
+    private String role;
 }
